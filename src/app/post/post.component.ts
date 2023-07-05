@@ -9,6 +9,7 @@ export class PostComponent {
 
   title: string = "List of Posts";
   parentMessage: string = "Test Message!";
+  childMessage: string = "Child Test Message!";
 
   @Input() fromParent!: string;
 
