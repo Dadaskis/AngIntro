@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./form-fill.component.css']
 })
 export class FormFillComponent {
-
+  postTitle: string = ""
+  postImgUrl: string = ""
+  postDetail: string = ""
+  postUrl: string = ""
 }
