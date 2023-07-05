@@ -40,12 +40,12 @@
 </div>
 <div class="centered-input-div">
 	<h3 
-		[(ngModel)]="postTitle"
+		[innerText]="postTitle"
 		[style.backgroundColor] = "postTitleBackground ? 'black' : 'white'"
 		[style.textColor] = "postTitleBackground ? 'white' : 'black'"
 	></h3>
 	<!--<img src="https://opengameart.org/sites/default/files/styles/medium/public/penguin_16x16_prev.png">-->
-	<img [(ngModel)]="postImgUrl">
-	<p [(ngModel)]="postDetail"></p>
-	<a [(ngModel)]="postUrl" [innerText]="postUrl != '' ? 'More Details Here!' : ''"></a>
+	<img [src]="postImgUrl">
+	<p [innerText]="postDetail"></p>
+	<a [href]="postUrl" [innerText]="postUrl != '' ? 'More Details Here!' : ''"></a>
 </div>
