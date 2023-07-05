@@ -16,8 +16,9 @@
 	<label for="add-background"> Add Background</label>
 </div>
 <div class="centered-input-div">
-	<h3>Post Title</h3>
-	<img src="https://opengameart.org/sites/default/files/styles/medium/public/penguin_16x16_prev.png">
-	<p>Post Details</p>
-	<a href="https://google.com">More Details Here!</a>
+	<h3 [(ngModel)]="postTitle"></h3>
+	<!--<img src="https://opengameart.org/sites/default/files/styles/medium/public/penguin_16x16_prev.png">-->
+	<img [(ngModel)]="postImgUrl">
+	<p [(ngModel)]="postDetail"></p>
+	<a [(ngModel)]="postUrl">More Details Here!</a>
 </div>
