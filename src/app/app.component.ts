@@ -22,7 +22,7 @@ export class AppComponent implements AfterViewInit {
     this.childMessageValue = this.childComponent.childMessage;
   }
 
-  receiveMessage($event: EventEmitter<string>) {
-    console.log($event)
+  receiveMessage($eventValue: string) {
+    console.log($eventValue)
   }
 }
