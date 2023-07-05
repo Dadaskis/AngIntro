@@ -79,9 +79,8 @@ export class AppComponent implements AfterViewInit {
     if (body == null) {
       return
     }
-    //let formFill = document.createElement("form-fill")
-    this.formFill = this.vcr.createComponent(YourChildComponent)
     appRoot.remove()
-    body.append(formFill)
+    this.formFill = this.vcr.createComponent(FormFillComponent)
+    //body.append(formFill)
   }
 }
