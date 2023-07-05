@@ -11,6 +11,7 @@ export class AppComponent implements AfterViewInit {
   parentMessage: string = "Parent Message";
   childMessageValue: string = "";
   fromChildMessageValue: string = "";
+  @Output() testImageUrl: string = "www.small-icons.com/stock-icons/small-computer/16x16/add.gif";
   
   @ViewChild(PostComponent) childComponent !: PostComponent;
 
