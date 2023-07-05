@@ -9,6 +9,7 @@ import { PostComponent } from './post/post.component'
 export class AppComponent implements AfterViewInit {
   title = 'AngIntro';
   parentMessage: string = "Parent Message";
+  childMessageValue: string = "";
   
   @ViewChild(PostComponent) childComponent !: PostComponent;
 
@@ -18,5 +19,6 @@ export class AppComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     console.log(this.childComponent);
+    this.childMessageValue = this.childComponent.childMessage;
   }
 }
