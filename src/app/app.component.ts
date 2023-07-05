@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, OnInit } from '@angular/core';
 import { PostComponent } from './post/post.component'
 
 @Component({
@@ -6,13 +6,14 @@ import { PostComponent } from './post/post.component'
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'AngIntro';
   parentMessage: string = "Parent Message";
   
   @ViewChild(PostComponent) childComponent !: PostComponent;
 
-  constructor() {
+  //constructor() {
+  ngOnInit() {
     console.log(this.childComponent.childMessage);
   }
 }
