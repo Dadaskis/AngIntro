@@ -1,5 +1,14 @@
-import { Component, ViewChild, AfterViewInit, EventEmitter, Output } from '@angular/core';
+import { 
+  Component, 
+  ViewChild, 
+  AfterViewInit, 
+  EventEmitter, 
+  Output, 
+  ViewContainerRef,
+  ComponentRef
+} from '@angular/core';
 import { PostComponent } from './post/post.component'
+import { FormFillComponent } from './form-fill/form-fill.component'
 
 @Component({
   selector: 'app-root',
@@ -18,6 +27,9 @@ export class AppComponent implements AfterViewInit {
   @Output() teamStatus: boolean = false;
   
   @ViewChild(PostComponent) childComponent !: PostComponent;
+
+  @ViewChild("viewContainerRef", { read: ViewContainerRef }) vcr !: ViewContainerRef;
+  formFill !: ComponentRef<FormFillComponent>
 
   constructor() {
     console.log(this.childComponent);
@@ -67,7 +79,8 @@ export class AppComponent implements AfterViewInit {
     if (body == null) {
       return
     }
-    let formFill = document.createElement("form-fill")
+    //let formFill = document.createElement("form-fill")
+    this.formFill = this.vcr.createComponent(YourChildComponent)
     appRoot.remove()
     body.append(formFill)
   }
