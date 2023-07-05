@@ -9,4 +9,5 @@
 <p>{{ fromChildMessageValue }}</p>
 <img [src]="testImageUrl"/>
 <h1 [class.text-red]="teamStatus" [class.text-blue]="!teamStatus">Team Color</h1>
+<h1 [style.backgroundColor] = "teamStatus ? 'black' : 'white'">Testing Inline CSS binding</h1>
 <button (click)="switchTeams()">Switch Teams</button>
