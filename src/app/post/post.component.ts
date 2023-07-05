@@ -8,6 +8,7 @@ import { Component, Input } from '@angular/core';
 export class PostComponent {
 
   title: string = "List of Posts";
+  parentMessage: string = "Test Message!";
 
   @Input() fromParent!: string;
 
