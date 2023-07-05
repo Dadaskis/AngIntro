@@ -4,7 +4,11 @@ import {Component} from '@angular/core';
 	selector: 'app-navbar',
 	template: '<h1>Navbar Component</h1>',
 	styles: [
-		'h1 { color: red }'
+		`
+		h1 { 
+			color: red
+		}
+		`
 	]
 })
 export class NavbarComponent {
