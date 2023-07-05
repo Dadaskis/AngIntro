@@ -8,6 +8,6 @@ h3 {
 
 .fill-form-main {
 	display: grid;
-	grid-auto-flow: column;
+	grid-auto-flow: row;
 	grid-column-gap: 10px;
 }
