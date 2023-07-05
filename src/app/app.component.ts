@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'AngIntro';
   parentMessage: string = "Parent Message";
   
-  @ViewChild(PostComponent) childComponent;
+  @ViewChild(PostComponent) childComponent: PostComponent;
 
   constructor() {
     console.log(this.childComponent.childMessage);
