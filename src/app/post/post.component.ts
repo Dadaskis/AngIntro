@@ -9,6 +9,6 @@ export class PostComponent {
 
   title: string = "List of Posts";
 
-  @Input() fromParent: string;
+  @Input() fromParent!: string;
 
 }
