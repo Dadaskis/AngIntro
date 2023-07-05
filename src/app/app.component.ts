@@ -62,7 +62,7 @@ export class AppComponent implements AfterViewInit {
     let appRoot = document.getElementById("app-root")
     let body = document.getElementById("body")
     let text = document.createElement("p")
-    text.text = "Placeholder"
+    text.innerText = "Placeholder"
     appRoot.remove()
     body.append(text)
   }
