@@ -10,6 +10,7 @@ export class AppComponent implements AfterViewInit {
   title = 'AngIntro';
   parentMessage: string = "Parent Message";
   childMessageValue: string = "";
+  fromChildMessageValue: string = "";
   
   @ViewChild(PostComponent) childComponent !: PostComponent;
 
@@ -24,5 +25,6 @@ export class AppComponent implements AfterViewInit {
 
   receiveMessage($eventValue: string) {
     console.log($eventValue)
+    this.fromChildMessageValue = $eventValue;
   }
 }
