@@ -28,7 +28,7 @@ export class AppComponent implements AfterViewInit {
   
   @ViewChild(PostComponent) childComponent !: PostComponent;
 
-  @ViewChild("viewContainerRef", { read: ViewContainerRef }) vcr !: ViewContainerRef;
+  @ViewChild("viewContainerRef") vcr !: ViewContainerRef;
   formFill !: ComponentRef<FormFillComponent>
 
   constructor() {
