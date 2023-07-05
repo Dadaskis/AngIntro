@@ -20,5 +20,5 @@
 	<!--<img src="https://opengameart.org/sites/default/files/styles/medium/public/penguin_16x16_prev.png">-->
 	<img [(ngModel)]="postImgUrl">
 	<p [(ngModel)]="postDetail"></p>
-	<a [(ngModel)]="postUrl">More Details Here!</a>
+	<a [(ngModel)]="postUrl" [innerText]="postUrl != '' ? 'More Details Here!' : ''"></a>
 </div>
