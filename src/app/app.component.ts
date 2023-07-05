@@ -7,12 +7,14 @@ import { PostComponent } from './post/post.component'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements AfterViewInit {
+
   title = 'AngIntro';
   parentMessage: string = "Parent Message";
   childMessageValue: string = "";
   fromChildMessageValue: string = "";
   @Output() testImageUrl: string = 
     "https://opengameart.org/sites/default/files/styles/medium/public/penguin_16x16_prev.png";
+  @Output() teamStatus: boolean = false;
   
   @ViewChild(PostComponent) childComponent !: PostComponent;
 
@@ -28,5 +30,9 @@ export class AppComponent implements AfterViewInit {
   receiveMessage($eventValue: string) {
     console.log($eventValue)
     this.fromChildMessageValue = $eventValue;
+  }
+
+  switchTeams() {
+    teamStatus = !teamStatus;
   }
 }
