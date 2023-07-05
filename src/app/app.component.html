@@ -14,9 +14,11 @@
   [style.color]="teamStatus ? 'white' : 'black'"
 >Testing Inline CSS binding</h1>
 <button (click)="switchTeams()">Switch Teams</button>
+<div></div>
 <input type="text" (keyup)="onKeyUp($event)" (keyup.enter)="onInputEnter($event)"/>
 <p>Username Input</p>
 <input type="text" (keyup.enter)="onUsernameEnter(username.value)" #username/>
 <p>Username Input Two-Way Data Binding</p>
 <input type="text" [(ngModel)] = "userNameValue" (keyup.enter)="onUsernameEnterTwoWay()"/>
+<div></div>
 <button (click)="proceedToFormFill()">Proceed to form filling</button>
