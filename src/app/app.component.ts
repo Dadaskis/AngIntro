@@ -41,7 +41,9 @@ export class AppComponent implements AfterViewInit {
     console.log($event)
   }
 
-  onInputEnter() {
+  onInputEnter($event: any) {
     console.log("Input Enter!")
+    console.log($event.target)
+    console.log($event.target.value)
   }
 }
