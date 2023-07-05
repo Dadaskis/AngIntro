@@ -12,6 +12,7 @@ export class AppComponent implements AfterViewInit {
   parentMessage: string = "Parent Message";
   childMessageValue: string = "";
   fromChildMessageValue: string = "";
+  userNameValue: string = "";
   @Output() testImageUrl: string = 
     "https://opengameart.org/sites/default/files/styles/medium/public/penguin_16x16_prev.png";
   @Output() teamStatus: boolean = false;
@@ -50,5 +51,10 @@ export class AppComponent implements AfterViewInit {
   onUsernameEnter($usernameValue: any) { 
     console.log("Username entered!")
     console.log($usernameValue)
+  }
+
+  onUsernameEnterTwoWay() {
+    console.log("Username Entered! Two-way data binding.")
+    console.log(this.userNameValue)
   }
 }
