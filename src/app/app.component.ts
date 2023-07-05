@@ -46,4 +46,9 @@ export class AppComponent implements AfterViewInit {
     console.log($event.target)
     console.log($event.target.value)
   }
+
+  onUsernameEnter(usernameValue) { 
+    console.log("Username entered!")
+    console.log(usernameValue)
+  }
 }
