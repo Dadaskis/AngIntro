@@ -21,4 +21,8 @@ export class AppComponent implements AfterViewInit {
     console.log(this.childComponent);
     this.childMessageValue = this.childComponent.childMessage;
   }
+
+  receiveMessage($event) {
+    console.log($event)
+  }
 }

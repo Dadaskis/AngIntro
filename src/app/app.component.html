@@ -2,4 +2,7 @@
 <p>Test Child Message: {{ childMessageValue }}</p>
 
 <app-navbar></app-navbar>
-<app-post [fromParent]='parentMessage'></app-post>
+<app-post 
+  [fromParent]='parentMessage' 
+  (messageEvent)='recieveMessage($event)'
+></app-post>
