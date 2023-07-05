@@ -12,7 +12,7 @@ while True:
 		print("Pulling.")
 		Popen(
 			[
-				'git', 'pull'
+				'git', 'pull', 'origin', 'master'
 			]
 		).wait()
 		continue
