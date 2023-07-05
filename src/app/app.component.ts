@@ -57,4 +57,13 @@ export class AppComponent implements AfterViewInit {
     console.log("Username Entered! Two-way data binding.")
     console.log(this.userNameValue)
   }
+
+  proceedToFormFill() {
+    let appRoot = document.getElementById("app-root")
+    let body = document.getElementById("body")
+    let text = document.createElement("p")
+    text.value = "Placeholder"
+    appRoot.remove()
+    body.append(text)
+  }
 }
