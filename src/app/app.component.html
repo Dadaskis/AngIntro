@@ -15,3 +15,5 @@
 >Testing Inline CSS binding</h1>
 <button (click)="switchTeams()">Switch Teams</button>
 <input type="text" (keyup)="onKeyUp($event)" (keyup.enter)="onInputEnter($event)"/>
+<p>Username Input</p>
+<input type="text" (keyup.enter)="onUsernameEnter(username.value)" #username/>
