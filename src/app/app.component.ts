@@ -36,7 +36,12 @@ export class AppComponent implements AfterViewInit {
     this.teamStatus = !this.teamStatus;
   }
 
-  onKeyUp() {
+  onKeyUp($event) {
     console.log("Key Up")
+    console.log($event)
+  }
+
+  onInputEnter() {
+    console.log("Input Enter!")
   }
 }
