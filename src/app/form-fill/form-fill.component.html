@@ -1,22 +1,49 @@
 <h3>Post Form</h3>
 <div class="centered-input-div">
-	<input type="text" placeholder="Post Title">
+	<input 
+		type="text" 
+		placeholder="Post Title" 
+		[(ngModel)]="postTitle"
+	>
 </div>
 <div class="centered-input-div">
-	<textarea cols="40" rows="5" placeholder="Post Details"></textarea>
+	<textarea 
+		cols="40" 
+		rows="5" 
+		placeholder="Post Details" 
+		[(ngModel)]="postDetail"
+	></textarea>
 </div>
 <div class="centered-input-div">
-	<input type="text" placeholder="Post Image URL">
+	<input 
+		type="text" 
+		placeholder="Post Image URL" 
+		[(ngModel)]="postImgUrl"
+	>
 </div>
 <div class="centered-input-div">
-	<input type="text" placeholder="Post URL">
+	<input 
+		type="text" 
+		placeholder="Post URL" 
+		[(ngModel)]="postUrl"
+	>
 </div>
 <div class="centered-input-div">
-	<input type="checkbox" id="add-background">
-	<label for="add-background"> Add Background</label>
+	<input 
+		type="checkbox" 
+		id="add-background" 
+		[(ngModel)]="postTitleBackground"
+	>
+	<label 
+		for="add-background"
+	> Add Background</label>
 </div>
 <div class="centered-input-div">
-	<h3 [(ngModel)]="postTitle"></h3>
+	<h3 
+		[(ngModel)]="postTitle"
+		[style.backgroundColor] = "postTitleBackground ? 'black' : 'white'"
+		[style.textColor] = "postTitleBackground ? 'white' : 'black'"
+	></h3>
 	<!--<img src="https://opengameart.org/sites/default/files/styles/medium/public/penguin_16x16_prev.png">-->
 	<img [(ngModel)]="postImgUrl">
 	<p [(ngModel)]="postDetail"></p>

@@ -10,4 +10,5 @@ export class FormFillComponent {
   postImgUrl: string = ""
   postDetail: string = ""
   postUrl: string = ""
+  postTitleBackground: boolean = false
 }
