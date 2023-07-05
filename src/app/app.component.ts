@@ -1,4 +1,4 @@
-import { Component, ViewChild, AfterViewInit, EventEmitter } from '@angular/core';
+import { Component, ViewChild, AfterViewInit, EventEmitter, Output } from '@angular/core';
 import { PostComponent } from './post/post.component'
 
 @Component({
