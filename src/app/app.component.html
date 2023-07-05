@@ -17,3 +17,5 @@
 <input type="text" (keyup)="onKeyUp($event)" (keyup.enter)="onInputEnter($event)"/>
 <p>Username Input</p>
 <input type="text" (keyup.enter)="onUsernameEnter(username.value)" #username/>
+<p>Username Input Two-Way Data Binding</p>
+<input type="text" [(ngModel)] = "userNameValue" (keyup.enter)="onUsernameEnterTwoWay()"/>
