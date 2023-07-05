@@ -33,6 +33,6 @@ export class AppComponent implements AfterViewInit {
   }
 
   switchTeams() {
-    teamStatus = !teamStatus;
+    this.teamStatus = !this.teamStatus;
   }
 }
