@@ -60,7 +60,13 @@ export class AppComponent implements AfterViewInit {
 
   proceedToFormFill() {
     let appRoot = document.getElementById("app-root")
+    if (appRoot == null) {
+      return
+    }
     let body = document.getElementById("body")
+    if (body == null) {
+      return
+    }
     let text = document.createElement("p")
     text.innerText = "Placeholder"
     appRoot.remove()
