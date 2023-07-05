@@ -1,4 +1,4 @@
-import { Component, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, ViewChild, AfterViewInit, EventEmitter } from '@angular/core';
 import { PostComponent } from './post/post.component'
 
 @Component({
@@ -22,7 +22,7 @@ export class AppComponent implements AfterViewInit {
     this.childMessageValue = this.childComponent.childMessage;
   }
 
-  receiveMessage($event) {
+  receiveMessage($event: EventEmitter<string>) {
     console.log($event)
   }
 }

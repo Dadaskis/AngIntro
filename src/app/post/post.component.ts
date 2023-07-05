@@ -18,7 +18,7 @@ export class PostComponent {
   @Output() messageEvent = new EventEmitter<string>();
 
   sendMessage(): void {
-    this.messageEvent.emit(outputChildMessage)
+    this.messageEvent.emit(this.outputChildMessage)
   }
 
 }
