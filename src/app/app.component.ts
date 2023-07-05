@@ -35,4 +35,8 @@ export class AppComponent implements AfterViewInit {
   switchTeams() {
     this.teamStatus = !this.teamStatus;
   }
+
+  onKeyUp() {
+    console.log("Key Up")
+  }
 }
