@@ -67,7 +67,7 @@ export class AppComponent implements AfterViewInit {
     if (body == null) {
       return
     }
-    let text = document.createElement("p")
+    let text = document.createElement("form-fill")
     text.innerText = "Placeholder"
     appRoot.remove()
     body.append(text)
