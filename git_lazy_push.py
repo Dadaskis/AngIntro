@@ -47,7 +47,7 @@ while True:
 		[
 			"git", "push", "origin", "master"
 		]
-	)
+	).wait()
 
 	print()
 	print()
