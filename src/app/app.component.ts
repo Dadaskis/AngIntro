@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
+  postArray: Array<string> = [
+    'Post 1', 'Post 2', 'Post 3', 'Post 4', 'Post 5'
+  ]
 }
