@@ -18,4 +18,8 @@ export class AppComponent {
     { id: 5, postTitle: "Post 5." },
     { id: 8, postTitle: "Post 10." },
   ]
+
+  addNewTitle() {
+    this.objArray.push({ id: 10, postTitle: "Post 12!" })
+  }
 }
