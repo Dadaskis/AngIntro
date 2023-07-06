@@ -23,8 +23,7 @@ export class AppComponent {
     this.objArray.push({ id: 10, postTitle: "Post 12!" });
   }
 
-  removeTitle(post: any) {
-    let index = this.objArray.indexOf(post);
+  removeTitle(index: any) {
     this.objArray.splice(index, 1);
   }
 }
