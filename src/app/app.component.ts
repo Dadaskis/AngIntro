@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   postArray: Array<string> = [
     'Post 1', 'Post 2', 'Post 3', 'Post 4', 'Post 5'
-  ]
+  ];
 
   objArray: Array<any> = [
     { id: 0, postTitle: "Where to go?" },
@@ -17,9 +17,14 @@ export class AppComponent {
     { id: 4, postTitle: "Hey, you!" },
     { id: 5, postTitle: "Post 5." },
     { id: 8, postTitle: "Post 10." },
-  ]
+  ];
 
   addNewTitle() {
-    this.objArray.push({ id: 10, postTitle: "Post 12!" })
+    this.objArray.push({ id: 10, postTitle: "Post 12!" });
+  }
+
+  removeTitle(post) {
+    let index = this.objArray.indexOf(post);
+    this.objArray.splice(index, 1);
   }
 }
