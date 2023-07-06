@@ -19,7 +19,7 @@ export class AppComponent {
     { id: 8, postTitle: "Post 10." },
   ];
 
-  stepStatus: string = "Step 1";
+  stepStatus: string = "Step 1 -";
 
   addNewTitle() {
     this.objArray.push({ id: 10, postTitle: "Post 12!" });
