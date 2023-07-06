@@ -10,7 +10,7 @@ export class AppComponent {
     'Post 1', 'Post 2', 'Post 3', 'Post 4', 'Post 5'
   ]
 
-  objArray: Array<object> = [
+  objArray: Array<any> = [
     { id: 0, postTitle: "Where to go?" },
     { id: 1, postTitle: "Post 1." },
     { id: 3, postTitle: "Front-End 101" },
