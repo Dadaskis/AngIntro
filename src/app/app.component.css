@@ -1,3 +1,7 @@
 .fill-form {
 	text-align: center;
 }
+
+.user-data-grid {
+	display: grid;
+}
