@@ -5,10 +5,5 @@
 
 <p>Fetching an object array</p>
 <ul>
-  <div *ngFor='let obj of objArray'>
-    <br>
-    <br>
-    <p>>>> {{ obj["id"] }}</p>
-    <h3>{{ obj["postTitle"] }}</h3>
-  </div> 
+  <h3 *ngFor='let obj of objArray'>{{ obj.postTitle }}</h3>
 </ul>
