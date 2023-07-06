@@ -21,15 +21,15 @@ export class AppComponent {
 
   saveData() {
     let data: UserData = {
-      address: addressValue,
-      email: emailValue,
-      name: usernameValue
+      address: this.addressValue,
+      email: this.emailValue,
+      name: this.usernameValue
     }
-    userDataBase.push(data)
+    this.userDataBase.push(data)
 
-    addressValue = "";
-    emailValue = "";
-    usernameValue = "";
+    this.addressValue = "";
+    this.emailValue = "";
+    this.usernameValue = "";
   }
 
   removeUser(index) {
