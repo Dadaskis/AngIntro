@@ -1,0 +1,26 @@
+<div id="app-root">
+  <h1>Angular App</h1>
+  <p>Test Child Message: {{ childMessageValue }}</p>
+  <app-navbar></app-navbar>
+  <app-post 
+    [fromParent]='parentMessage' 
+    (messageEvent)='receiveMessage($event)'
+  ></app-post>
+  <p>{{ fromChildMessageValue }}</p>
+  <img [src]="testImageUrl"/>
+  <h1 [class.text-red]="teamStatus" [class.text-blue]="!teamStatus">Team Color</h1>
+  <h1 
+    [style.backgroundColor]="teamStatus ? 'black' : 'white'" 
+    [style.color]="teamStatus ? 'white' : 'black'"
+  >Testing Inline CSS binding</h1>
+  <button (click)="switchTeams()">Switch Teams</button>
+  <div></div>
+  <input type="text" (keyup)="onKeyUp($event)" (keyup.enter)="onInputEnter($event)"/>
+  <p>Username Input</p>
+  <input type="text" (keyup.enter)="onUsernameEnter(username.value)" #username/>
+  <p>Username Input Two-Way Data Binding</p>
+  <input type="text" [(ngModel)] = "userNameValue" (keyup.enter)="onUsernameEnterTwoWay()"/>
+  <div></div>
+  <button (click)="proceedToFormFill()">Proceed to form filling</button>
+</div>
+<ng-template #viewContainerRef></ng-template>
