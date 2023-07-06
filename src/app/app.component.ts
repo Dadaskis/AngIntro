@@ -32,7 +32,7 @@ export class AppComponent {
     this.usernameValue = "";
   }
 
-  removeUser(index: int) {
+  removeUser(index: any) {
     this.userDataBase.splice(index, 1)
   }
 }
