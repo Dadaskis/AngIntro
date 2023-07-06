@@ -19,11 +19,17 @@ export class AppComponent {
     { id: 8, postTitle: "Post 10." },
   ];
 
+  stepStatus: string = "Step 1";
+
   addNewTitle() {
     this.objArray.push({ id: 10, postTitle: "Post 12!" });
   }
 
   removeTitle(index: any) {
     this.objArray.splice(index, 1);
+  }
+
+  onStepPress(stepStatus: string) {
+    this.stepStatus = stepStatus;
   }
 }

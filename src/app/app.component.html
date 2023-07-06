@@ -18,3 +18,26 @@
   <p>No Data</p>
   <button (click)="addNewTitle()">Add A Totally New Title!</button>
 </ng-template>
+
+<br>
+<br>
+<br>
+
+<div>
+  <button (click)="onStepPress('Step 1')">Step 1</button>
+  <button (click)="onStepPress('Step 2')">Step 2</button>
+  <button (click)="onStepPress('Step 3')">Step 3</button>
+</div>
+<br>
+<div [ngSwitch] = "stepStatus">
+  <div *ngSwitchCase = "'Step 1'">
+    <p>Step 1</p>
+  </div>
+  <div *ngSwitchCase = "'Step 2'">
+    <p>Step 2</p>
+  </div>
+  <div *ngSwitchCase = "'Step 3'">
+    <p>Step 3</p>
+    <h3>The last one!</h3>
+  </div>
+</div>
