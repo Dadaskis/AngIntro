@@ -21,6 +21,8 @@ export class AppComponent {
 
   stepStatus: string = "Step 1 -";
 
+  teamStatus: boolean = false;
+
   addNewTitle() {
     this.objArray.push({ id: 10, postTitle: "Post 12!" });
   }
@@ -31,5 +33,9 @@ export class AppComponent {
 
   onStepPress(stepStatus: string) {
     this.stepStatus = stepStatus;
+  }
+
+  switchTeam() {
+    this.teamStatus = !this.teamStatus
   }
 }

@@ -44,3 +44,16 @@
     <p>Please, pick a step.</p>
   </div>
 </div>
+
+<br>
+<br>
+<br>
+
+<div>
+  <button (click) = "switchTeam()">Switch Team</button>
+  <h1
+    [ngStyle] = "{
+      color : teamStatus ? 'red' : 'blue'
+    }"
+  >Team Color</h1>
+</div>
