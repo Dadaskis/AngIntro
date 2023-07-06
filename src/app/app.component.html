@@ -3,7 +3,8 @@
   <li *ngFor='let post of postArray' >{{ post }}</li>
 </ul>
 
-<div *ngIf = "objArray.length > 0; else noData">
+<div *ngIf = "objArray.length > 0; then postList else noData"></div>
+<ng-template #postList>
   <p>Fetching an object array</p>
   <button (click)="addNewTitle()">Add New Title!</button>
   <ul>
@@ -12,7 +13,7 @@
       <button (click)="removeTitle(i)">Remove</button>
     </h3>
   </ul>
-</div>
+</ng-template>
 <ng-template #noData>
   <p>No Data</p>
   <button (click)="addNewTitle()">Add A Totally New Title!</button>
