@@ -4,5 +4,5 @@
 
 .user-data-grid {
 	display: grid;
-	grid-template: none | 5 / 5;
+	grid-template-columns: 200px 200px 200px 200px 200px;
 }
