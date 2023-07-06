@@ -53,7 +53,8 @@
   <button (click) = "switchTeam()">Switch Team</button>
   <h1
     [ngStyle] = "{
-      color : teamStatus ? 'red' : 'blue'
+      'red-team' : teamStatus,
+      'blue-team' : !teamStatus
     }"
   >Team Color</h1>
 </div>
