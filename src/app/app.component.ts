@@ -13,14 +13,14 @@ export interface UserData {
 })
 export class AppComponent {
 
-  addressValue: string;
-  emailValue: string;
-  usernameValue: string;
+  usernameValue: string = "";
+  emailValue: string = "";
+  addressValue: string = "";
 
   userDataBase: Array<UserData> = []
 
   saveData() {
-    data = {
+    let data: UserData = {
       address: addressValue,
       email: emailValue,
       name: usernameValue
