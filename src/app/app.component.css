@@ -4,6 +4,5 @@
 
 .user-data-grid {
 	display: grid;
-	grid-column-start: 5;
-	grid-column-end: 5;
+	grid-template: none | 5 / 5;
 }
