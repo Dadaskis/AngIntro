@@ -1,1 +1,14 @@
-<p *ngFor='let post of postArray' >{{ post }}</p>
+<p>Fetching a string array</p>
+<ul>
+  <li *ngFor='let post of postArray' >{{ post }}</li>
+</ul>
+
+<p>Fetching an object array</p>
+<ul>
+  <div *ngFor='let obj of objArray'>
+    <br>
+    <br>
+    <p>>>> {{ obj.id }}</p>
+    <h3>{{ obj.postTitle }}</h3>
+  </div> 
+</ul>
