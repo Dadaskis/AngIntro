@@ -6,8 +6,8 @@
 <p>Fetching an object array</p>
 <button (click)="addNewTitle()">Add New Title!</button>
 <ul>
-  <h3 *ngFor='let obj of objArray'>
-    {{ obj.postTitle }}
-    <button (click)="removeTitle(obj)">Remove</button>
+  <h3 *ngFor='let obj of objArray; let i = index'>
+    {{ i }} {{ obj.postTitle }}
+    <button (click)="removeTitle(i)">Remove</button>
   </h3>
 </ul>
