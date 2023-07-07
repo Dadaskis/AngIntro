@@ -24,6 +24,7 @@
       ngModel
       #fullName='ngModel'
       required
+      [ngClass]="fullName.invalid : is-invalid"
     >
     <div class="alert alert-danger" *ngIf="fullName.invalid && fullName.touched">Full name is required!</div>
   </div>
