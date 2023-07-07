@@ -10,6 +10,7 @@ import { PostListComponent } from './post-list/post-list.component';
 import { FormFillComponent } from './form-fill/form-fill.component';
 import { AppendPipe } from './pipes/append.pipe';
 import { AppendCLIPipe } from './pipes/append-cli.pipe';
+import { SummaryPipe } from './pipes/summary.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AppendCLIPipe } from './pipes/append-cli.pipe';
     PostListComponent,
     FormFillComponent,
     AppendPipe,
-    AppendCLIPipe
+    AppendCLIPipe,
+    SummaryPipe
   ],
   imports: [
     BrowserModule,
