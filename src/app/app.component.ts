@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms'
 
-import { UsersService } from 'services/users.service'
+import { UsersService } from './services/users.service'
 
 @Component({
   selector: 'app-root',
