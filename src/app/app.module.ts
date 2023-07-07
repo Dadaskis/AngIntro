@@ -16,7 +16,8 @@ import { AppendPipe } from './pipes/append.pipe'
     NavbarComponent,
     PostComponent,
     PostListComponent,
-    FormFillComponent
+    FormFillComponent,
+    AppendPipe
   ],
   imports: [
     BrowserModule,
