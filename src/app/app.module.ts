@@ -13,6 +13,7 @@ import { AppendCLIPipe } from './pipes/append-cli.pipe';
 import { SummaryPipe } from './pipes/summary.pipe';
 import { UserListFullComponent } from './user-list-full/user-list-full.component';
 import { UserListNamesComponent } from './user-list-names/user-list-names.component';
+import { UsersService } from './services/users.service'
 
 @NgModule({
   declarations: [
@@ -32,7 +33,9 @@ import { UserListNamesComponent } from './user-list-names/user-list-names.compon
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    UsersService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
