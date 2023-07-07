@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { UsersService } from '../services/users'
+import { UsersService } from '../services/users.service'
 import { User } from '../interfaces/user'
 
 @Component({
@@ -11,6 +11,6 @@ export class UserListNamesComponent {
   users: Array<User> = {}
 
   constructor(private service: UsersService){ 
-    users = service.users
+    this.users = service.users
   }
 }

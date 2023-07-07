@@ -11,6 +11,6 @@ export class UserListFullComponent {
   users: Array<User> = {}
 
   constructor(private service: UsersService){ 
-    users = service.users
+    this.users = service.users
   }
 }
