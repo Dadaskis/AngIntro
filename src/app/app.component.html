@@ -11,7 +11,7 @@
 <br>
 <br>
 
-<form class="container-sm" #formFill="ngForm" (submit)="onSubmit(formFill)">
+<form class="container-sm" #formFill="ngForm" (ngSubmit)="onSubmit(formFill)">
   <h3>Fill Form</h3>
   <br>
   <div class="form-group">
@@ -83,5 +83,5 @@
       </div>
     </div>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary" [disabled]='fillForm.invalid'>Submit</button>
 </form> 
