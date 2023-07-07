@@ -1,1 +1,4 @@
-<p>user-list-full works!</p>
+<h2>Users List</h2>
+<div *ngFor='let user in users; let index = index'>
+	<p>{{ index }}. {{ user.uniqueID }}, {{ user.name}}. Display name: {{ user.displayName }}</p>
+</div>

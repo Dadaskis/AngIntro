@@ -1,1 +1,4 @@
-<p>user-list-names works!</p>
+<h2>Users List (Names)</h2>
+<div *ngFor='let user in users; let index = index'>
+	<p>{{ index }}. {{ user.displayName }}</p>
+</div>
