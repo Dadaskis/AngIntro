@@ -28,7 +28,7 @@
       minlength="3" 
     >
     <div *ngIf="fullName.invalid && fullName.touched">
-      <div *ngIf="fullName.errors.invalid">
+      <div *ngIf="fullName.errors.required">
         <div class="alert alert-danger">Full name is required!</div>
       </div>
       <div *ngIf="fullName.errors.minLength">
