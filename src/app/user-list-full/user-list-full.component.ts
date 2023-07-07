@@ -8,11 +8,10 @@ import { User } from '../interfaces/user'
   styleUrls: ['./user-list-full.component.css']
 })
 export class UserListFullComponent {
-  //users: Array<User> = [ {uniqueID: 0, name: "Error", displayName: "Error"} ]
-  service?: UsersService
+  users: Array<User> = [ {uniqueID: 0, name: "Error", displayName: "Error"} ]
 
   constructor(private service: UsersService){ 
-    this.service = service
+    this.users = service.users
   }
 
   addRandomUser() {
