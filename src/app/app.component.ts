@@ -20,10 +20,10 @@ export class AppComponent {
       return
     }
 
-    usersService.addUser({
+    this.usersService.addUser({
       uniqueID: 0,
-      name: fillForm.values['fullName'],
-      displayName: fillForm.values['fullName']
+      name: fillForm.value['fullName'],
+      displayName: fillForm.value['fullName']
     })
   }
 }
