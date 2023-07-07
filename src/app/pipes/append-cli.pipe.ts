@@ -1,12 +1,12 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'appendCli'
+  name: 'appendCLI'
 })
-export class AppendCliPipe implements PipeTransform {
+export class AppendCLIPipe implements PipeTransform {
 
   transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+    return "Append CLI here: " + value;
   }
 
 }

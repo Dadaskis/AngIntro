@@ -9,7 +9,7 @@ import { PostComponent } from './post/post.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { FormFillComponent } from './form-fill/form-fill.component';
 import { AppendPipe } from './pipes/append.pipe';
-import { AppendCliPipe } from './append-cli.pipe'
+import { AppendCLIPipe } from './pipes/append-cli.pipe'
 
 @NgModule({
   declarations: [
