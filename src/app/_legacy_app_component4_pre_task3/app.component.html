@@ -1,0 +1,22 @@
+<p>{{ "Application" | uppercase }}</p>
+<p>{{ 1290147 | number }} citizens used to live here, now it's a ghost town.</p>
+<p>{{ 123.123123 | number : '1.2-2' }} decimal check</p>
+<p>Price: {{ 99.99 | currency : 'USD' }}</p>
+<p>Price: {{ 99.99 | currency : 'USD' : false }}</p>
+<p>Price: {{ 99.99 | currency : 'USD' : false : '2.2-2' }}</p>
+<p>Price: {{ 99.99 | currency : 'USD' : true : '3.2-2' }}</p>
+<p>Price: {{ 99.99 | currency : 'CAD' }}</p>
+<p>Price: {{ 99.99 | currency : 'BYN' }}</p>
+<p>Today is: {{ currentDate | date }}</p>
+<p>Today is: {{ currentDate | date : 'short' }}</p>
+<p>Today is: {{ currentDate | date : 'shortDate' }}</p>
+<p>Today is: {{ currentDate | date : 'medium' }}</p>
+<p>Test JSON: {{ { postTitle: "Here is the name", magicNumber: 42 } | json }}</p>
+<p>Test percent: {{ 0.685 | percent }}</p>
+<p>Test percent: {{ 0.685 | percent : '1.1-1' }}</p>
+<p>Slice: {{ ['You', 'Can', 'See', 'That', 'But not this one.'] | slice : 0:4 }}</p>
+<p>{{ "Test Value" | append }}</p>
+<p>{{ "Test Value" | appendCLI }}</p>
+<p>{{ "Test Text Test Text Test Text Test Text Test Text" | summary : 20 }}</p>
+<app-user-list-full></app-user-list-full>
+<app-user-list-names></app-user-list-names>
