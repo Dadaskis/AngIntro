@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { PostComponent } from './post/post.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { FormFillComponent } from './form-fill/form-fill.component';
+import { AppendPipe } from './pipes/append.pipe'
 
 @NgModule({
   declarations: [
