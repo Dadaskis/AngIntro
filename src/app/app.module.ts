@@ -19,7 +19,7 @@ import { AppendCLIPipe } from './pipes/append-cli.pipe'
     PostListComponent,
     FormFillComponent,
     AppendPipe,
-    AppendCliPipe
+    AppendCLIPipe
   ],
   imports: [
     BrowserModule,
