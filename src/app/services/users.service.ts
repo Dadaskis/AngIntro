@@ -24,7 +24,7 @@ export class UsersService {
     },
   ]
 
-  add_user(user: User) {
+  addUser(user: User) {
     this.users.push(user)
   }
 
