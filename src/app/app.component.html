@@ -16,7 +16,16 @@
   <br>
   <div class="form-group">
     <label for="inputFullName">Full Name</label>
-    <input type="text" class="form-control" id="inputFullName" name="inputFullName" ngModel>
+    <input 
+      type="text" 
+      class="form-control" 
+      id="inputFullName" 
+      name="fullName"
+      ngModel
+      #fullName='ngModel'
+      required
+    >
+    <div class="alert alert-danger" *ngIf="fullName.invalid">Full name is required!</div>
   </div>
   <div class="form-group">
     <label for="inputEMail">Email address</label>
@@ -24,9 +33,10 @@
       type="email" 
       class="form-control" 
       id="inputEMail" 
-      name="inputFullName" 
+      name="email"
       aria-describedby="emailHelp" 
       ngModel
+      #email='ngModel'
     >
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
@@ -37,8 +47,9 @@
       row='10' 
       class="form-control" 
       id="inputAddress"
-      name="inputAddress"
+      name="address"
       ngModel
+      #address='ngModel'
     ></textarea>
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
