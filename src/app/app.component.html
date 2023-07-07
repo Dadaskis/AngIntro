@@ -59,7 +59,7 @@
       <div *ngIf="email.errors?.['required']">
         <p>E-Mail is required!</p>
       </div>
-      <div *ngIf="email.errors?.['invalid']">
+      <div *ngIf="email.errors?.['pattern']">
         <p>E-Mail is invalid!</p>
       </div>
     </div>
@@ -75,7 +75,7 @@
       ngModel
       #address='ngModel'
       required
-      [ngClass]="{ 'is-invalid' : email.invalid && email.touched }"
+      [ngClass]="{ 'is-invalid' : address.invalid && address.touched }"
     ></textarea>
     <div *ngIf="address.invalid && address.touched" class="alert alert-danger">
       <div *ngIf="address.errors?.['required']">
