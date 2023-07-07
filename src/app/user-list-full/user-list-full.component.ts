@@ -8,7 +8,7 @@ import { User } from '../interfaces/user'
   styleUrls: ['./user-list-full.component.css']
 })
 export class UserListFullComponent {
-  users: Array<User> = {}
+  users: Array<User> = []
 
   constructor(private service: UsersService){ 
     this.users = service.users
