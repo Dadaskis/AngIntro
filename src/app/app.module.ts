@@ -11,6 +11,8 @@ import { FormFillComponent } from './form-fill/form-fill.component';
 import { AppendPipe } from './pipes/append.pipe';
 import { AppendCLIPipe } from './pipes/append-cli.pipe';
 import { SummaryPipe } from './pipes/summary.pipe';
+import { UserListFullComponent } from './user-list-full/user-list-full.component';
+import { UserListNamesComponent } from './user-list-names/user-list-names.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { SummaryPipe } from './pipes/summary.pipe';
     FormFillComponent,
     AppendPipe,
     AppendCLIPipe,
-    SummaryPipe
+    SummaryPipe,
+    UserListFullComponent,
+    UserListNamesComponent
   ],
   imports: [
     BrowserModule,
