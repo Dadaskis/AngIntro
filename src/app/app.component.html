@@ -51,12 +51,16 @@
       ngModel
       #email='ngModel'
       required
+      pattern='[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$'
       [ngClass]="{ 'is-invalid' : email.invalid && email.touched }"
     >
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     <div *ngIf="email.invalid && email.touched" class="alert alert-danger">
       <div *ngIf="email.errors?.['required']">
         <p>E-Mail is required!</p>
+      </div>
+      <div *ngIf="email.errors?.['invalid']">
+        <p>E-Mail is invalid!</p>
       </div>
     </div>
   </div>
@@ -71,7 +75,6 @@
       ngModel
       #address='ngModel'
       required
-      pattern='[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$'
       [ngClass]="{ 'is-invalid' : email.invalid && email.touched }"
     ></textarea>
     <div *ngIf="address.invalid && address.touched" class="alert alert-danger">
