@@ -6,7 +6,7 @@ import { User } from '../interfaces/user'
 })
 export class UsersService {
 
-  users: Array<User> = {
+  users: Array<User> = [
     {
       uniqueID: 1029148,
       name: "gooddude",
@@ -22,7 +22,7 @@ export class UsersService {
       name: "username",
       displayName: "Generic User"
     },
-  }
+  ]
 
   add_user(user: User) {
     this.users.push(user)
