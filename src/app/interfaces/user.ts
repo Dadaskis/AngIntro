@@ -1,5 +1,5 @@
 export interface User {
-	uniqueID: int;
+	uniqueID: number;
 	name: string;
 	displayName: string;
 }
