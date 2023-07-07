@@ -9,13 +9,15 @@ import { User } from '../interfaces/user'
 })
 export class UserListFullComponent {
   users: Array<User> = [ {uniqueID: 0, name: "Error", displayName: "Error"} ]
+  usersService?: UsersService
 
   constructor(private service: UsersService){ 
     this.users = service.users
+    this.UsersService = service
   }
 
   addRandomUser() {
-    service.addUser({
+    this.usersService.addUser({
       uniqueID: 10101010,
       name: "Random",
       displayName: "Randomous"
