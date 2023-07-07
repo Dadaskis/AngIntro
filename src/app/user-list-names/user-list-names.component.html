@@ -1,6 +1,6 @@
 <h2>Users List (Names)</h2>
 <div>
 	<p 
-		*ngFor='let user of users; let index = index'
+		*ngFor='let user of service.users; let index = index'
 	>{{ index }}. {{ user.displayName }}</p>
 </div>

@@ -8,9 +8,11 @@ import { User } from '../interfaces/user'
   styleUrls: ['./user-list-names.component.css']
 })
 export class UserListNamesComponent {
-  users: Array<User> = [ {uniqueID: 0, name: "Error", displayName: "Error"} ]
+  //users: Array<User> = [ {uniqueID: 0, name: "Error", displayName: "Error"} ]
+  service?: UsersService
 
   constructor(private service: UsersService){ 
-    this.users = service.users
+    //this.users = service.users
+    this.service = service
   }
 }
