@@ -1,7 +1,7 @@
 <h2>Users List</h2>
 <div>
 	<p
-		*ngFor='let user of service.users; let index = index'
+		*ngFor='let user of users; let index = index'
 	>{{ index }}. {{ user.uniqueID }}, {{ user.name}}. Display name: {{ user.displayName }}</p>
 </div>
 <button (click)='addRandomUser()'>Add Random User</button>
