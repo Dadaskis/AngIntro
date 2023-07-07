@@ -13,14 +13,16 @@ export class UserListFullComponent {
 
   constructor(private service: UsersService){ 
     this.users = service.users
-    this.UsersService = service
+    this.usersService = service
   }
 
   addRandomUser() {
-    this.usersService.addUser({
-      uniqueID: 10101010,
-      name: "Random",
-      displayName: "Randomous"
-    })
+    if(this.usersService) {
+      this.usersService.addUser({
+        uniqueID: 10101010,
+        name: "Random",
+        displayName: "Randomous"
+      })
+    }
   }
 }
